@@ -1,0 +1,574 @@
+@charset "UTF-8";
+/* CSS Document */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: proxima-nova, sans-serif;
+  font-size: 15px;
+  line-height: 19px;
+  color: #000000;
+  background: #fafafa;
+}
+a {
+  color: #000000;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 !important;
+}
+h1 {
+  font-size: 26px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul.navbar-nav .active > .nav-link {
+  color: #FCB61A !important;
+  font-weight: 600;
+}
+.containerWidth {
+  width: 1366px !important;
+  margin: 0 auto;
+}
+header {}
+header .h-contact {
+  width: 300px;
+  font-size: 11px;
+  line-height: 14px;
+}
+header .h-contact ul li {
+  list-style-type: none;
+  padding-bottom: 6px;
+}
+header .h-contact ul li a {
+  list-style-type: none;
+  padding-bottom: 6px;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(0, 0, 0, 1);
+}
+/**video and form**/
+.banner {
+  background: url(../images/video_bg.png)no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  background-size: cover;
+}
+.banner .heading {
+  text-align: center;
+  width: 75%;
+  margin: 0 auto;
+}
+.banner .heading .border-top {
+  border-top: 1px solid #000 !important
+}
+.banner .heading ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px;
+}
+/**Form**/
+.cam_form_style input[type="text"], .cam_form_style input[type="email"], .cam_form_style input[type="password"], select {
+  outline: none;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  color: #000;
+  background: #fff;
+  letter-spacing: 0.5px;
+  padding: 12px 14px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+.cam_top_input input[type="text"]:first-child {
+  width: 14%;
+  display: inline-block;
+}
+.cam_top_input input[type="text"] {
+  width: 41.8%;
+  display: inline-block;
+}
+.cam_form form h2 {
+  font-size: 23px;
+  font-weight: bold;
+  letter-spacing: 10px;
+  margin-bottom: 0px !important
+}
+.cam_form form p {
+  font-weight: 600;
+}
+.cam_form_style button.btn {
+  color: #fff;
+  background: #000;
+  border: none;
+  padding: 14px 0;
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  letter-spacing: 1px;
+  -webkit-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+  transition: 0.5s all;
+  border-radius: 5px;
+}
+::-webkit-input-placeholder { /* Edge */
+  color: #000000;
+  opacity: 1 !important;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #000000;
+  opacity: 1 !important;
+}
+::placeholder {
+  color: #000000;
+  opacity: 1 !important;
+}
+.whiteBg {
+  background: #fff;
+}
+.containerWidth nav {
+  box-shadow: 0px 2px 4px #ccc;
+}
+.cam_form_style input[type="submit"]:hover {
+  background: #dc3545;
+}
+.cam_padding {
+  background: #fff;
+  box-shadow: 2px 2px 5px #ccc;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+.cam_padding .cam_form_topBg {
+  background: #F5F5F5;
+  padding: 20px 20px 10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.cam_form_style {
+  padding: 15px 20px;
+}
+.cam_form_style span {
+  font-size: 13px;
+  color: #666;
+}
+.cam_form_style span a {
+  color: #3369e7;
+}
+/**Box**/
+.camBox {
+  display: inline-block;
+}
+.card {
+  background: #fafafa;
+  height: 220px;
+}
+.card:hover {
+  background: #ffffff;
+  box-shadow: 2px 2px 4px #ccc;
+}
+/**alumini**/
+.alumini_benefits .circle_section {
+  position: relative;
+}
+.alumini_benefits .alumini_info {
+  background: #fcb61a;
+  width: 100%;
+  height: 75px;
+  border-radius: 40px;
+  position: relative;
+}
+.alumini_benefits .alumini_info .alumini_copy {
+  color: #fff;
+  width: 85%;
+  font-size: 15px;
+  line-height: 15px;
+}
+.alumini_benefits .alumini_info .alumini_icon {
+  border-radius: 50px;
+  background: #eef1f2;
+  width: 80px;
+  height: 78px;
+  border: 10px solid #fff;
+  position: absolute;
+  right: -25px;
+  top: -2px;
+  padding: 12px 18px;
+}
+.ileft {
+  left: -25px;
+}
+.alumini_benefits .alumini_info .alumini_icon:before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 0;
+  top: -5px;
+  right: 2px;
+  right: -4px;
+  bottom: 0px;
+  border: 8px solid #fcb61a;
+  border-radius: 50px;
+  width: 68px;
+  height: 68px;
+}
+.alumini_benefits .stroke_circle {
+  background: url("../images/stroke_circle.png") no-repeat;
+  height: 376px;
+  background-position: center;
+  background-size: 85%;
+  position: relative;
+  top: 25px;
+}
+.alumini_benefits .stroke_circle > p {
+  position: absolute;
+  right: 0;
+  left: 4px;
+  bottom: 0;
+  top: 46%;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+}
+.alumini_benefits .c2, .alumini_benefits .c6 {
+  background: #eba915;
+  top: 40px;
+}
+.alumini_benefits .c3, .alumini_benefits .c7 {
+  background: #eba915;
+  top: 80px;
+}
+.alumini_benefits .c4, .alumini_benefits .c8 {
+  background: #946909;
+  top: 120px;
+}
+.alumini_benefits .c1 .alumini_copy {
+  padding: 20px 0px 10px 20px;
+}
+.alumini_benefits .c2 .alumini_copy {
+  padding: 10px 0px 10px 20px;
+}
+.alumini_benefits .c3 .alumini_copy {
+  padding: 20px 0px 0px 20px;
+}
+.alumini_benefits .c4 .alumini_copy {
+  padding: 20px 0px 0px 20px;
+}
+.alumini_benefits .c5 .alumini_copy {
+  padding: 20px 0px 0px 65px;
+}
+.alumini_benefits .c6 .alumini_copy {
+  padding: 10px 0px 0px 65px;
+}
+.alumini_benefits .c7 .alumini_copy {
+  padding: 8px 0px 0px 65px;
+}
+.alumini_benefits .c8 .alumini_copy {
+  padding: 20px 0px 0px 65px;
+}
+.alumini_benefits .c2 .alumini_icon:before, .alumini_benefits .c6 .alumini_icon:before {
+  border: 8px solid #eba915 !important;
+}
+.alumini_benefits .c3 .alumini_icon:before, .alumini_benefits .c7 .alumini_icon:before {
+  border: 8px solid #d29308 !important;
+}
+.alumini_benefits .c4 .alumini_icon:before, .alumini_benefits .c8 .alumini_icon:before {
+  border: 8px solid #946909 !important;
+}
+.btn-wid .btn {
+  max-width: 355px;
+}
+/**curriculum**/
+.curriculum .card {
+  height: 100%;
+  box-shadow: 0px 0px 2px #ccc;
+}
+.curriculum .card-body {
+  border-top: 5px solid #fcb61a;
+}
+.curriculum .media {
+  border-bottom: 1px solid rgba(0, 0, 0, .125);
+  padding: 0 0 20px;
+}
+.curriculum .card-body p {
+  margin-bottom: 0.8rem;
+  line-height: 17px;
+}
+.curriculum h3 {
+  font-size: 1.25rem;
+}
+.curriculum .note {
+  color: #bcbcbe;
+}
+/** IPD**/
+.ipd .ipd_hierarchy img {
+  width: 87%;
+}
+.ipo_block {
+  text-align: center;
+}
+.ipd .ipo_block .ipo_icon img {
+  width: 70%;
+}
+.ipo_block .ipo_text {
+  padding: 20px 0 0 0;
+}
+/**faculty**/
+.faculty .card {
+  background: #ffffff;
+  height: 168px;
+}
+.faculty .card:hover {
+  background: #fafafa;
+  height: 168px;
+}
+.faculty .card p {
+  color: #707070;
+  padding: 10px 0;
+}
+.faculty .card h4 {
+  font-size: 1.25rem;
+}
+/**Participate**/
+.participant .card {
+  background: #ffffff;
+  height: 80px;
+  line-height: 15px;
+}
+/**pieChart**/
+.pieChart ul li {
+  list-style-type: square;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 20px;
+  padding: 8px 0;
+}
+.pieChart ul li.pieColor1::marker {
+  color: #f0aa0e;
+}
+.pieChart ul li.pieColor2::marker {
+  color: #a27612;
+}
+.pieChart ul li.pieColor3::marker {
+  color: #f5c049;
+}
+.pieChart ul li.pieColor4::marker {
+  color: #bd8811;
+}
+.pieChart ul li.pieColor5::marker {
+  color: #86620f;
+}
+.pieChart ul li.pieColor6::marker {
+  color: #73530c;
+}
+.pieChart ul li.pieColor7::marker {
+  color: #483306;
+}
+.pieChart ul li.pieColor8::marker {
+  color: #fcd57e;
+}
+.pieChart ul li.pieColor9::marker {
+  color: #241902;
+}
+.pieChart ul li.pieColor10::marker {
+  color: #d49812;
+}
+.pieChart ul li.pieColor10::marker {
+  color: #fae7bd;
+}
+/**mapNavigation**/
+.mapNavigation h4 {
+  color: #FCB61A;
+}
+.mapNavigation .card {
+  width: 80%;
+  background: #ffffff;
+}
+.mapNavigation .card-body {
+  margin: 0 auto;
+}
+.mapNavigation .card-body:first-child {
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(0, 0, 0, .125);
+}
+.mapNavigation .note {
+  color: #bcbcbe;
+}
+/**Carousel**/
+.carousel .pull-right {
+  float: right;
+}
+.carousel .card {
+  width: 70%;
+  padding: 0 20px;
+  height: 100%;
+  background: #fff;
+}
+.carousel-control-next-icon {
+  background-image: url("../images/next.png");
+}
+.carousel-control-prev-icon {
+  background-image: url("../images/prev.png");
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  display: inline-block;
+  width: 24px;
+  height: 42px;
+}
+.carousel .card-body ul li {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 22px;
+  padding: 8px 0;
+  color: #000;
+}
+.carousel .card-body ul li::marker {
+  color: #fcb61a;
+}
+/** module **/
+.module table thead tr th {
+  background: #FCB61A;
+}
+.module .bg-grey {
+  background: #fdfdfd;
+}
+.module .bg-yellow {
+  background: #FCB61A;
+}
+/**Footer**/
+footer {
+  background: #565656;
+  color: #fff;
+}
+footer a {
+  color: #fff;
+}
+footer a:hover {
+  color: #fafafa;
+}
+footer h6 {
+  font-size: 22px;
+}
+@media only screen and (max-width:1365px) {
+  .containerWidth {
+    width: 100% !important;
+    padding: 0 20px;
+  }
+  header.containerWidth {
+    padding: 0 0px;
+  }
+  .cam_program .card {
+    height: 240px;
+  }
+  .cam_program .card-body {
+    padding: 10px;
+  }
+}
+@media only screen and (max-width:1200px) {
+  .alumini_benefits .stroke_circle {
+    background-size: 100%;
+  }
+  .alumini_benefits .alumini_info .alumini_copy {
+    font-size: 13px;
+    line-height: 13px;
+  }
+  .alumini_benefits .c7 .alumini_copy {
+    padding: 5px 0px 0px 65px;
+  }
+  .participant .card {
+    height: 100px;
+  }
+  .mapNavigation .card {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:991px) {
+  .cam_program .card {
+    height: auto;
+    margin: 10px 0;
+  }
+  .alumini_benefits .alumini_info .alumini_icon {
+    right: 0;
+    left: 0;
+  }
+  .alumini_benefits .c2, .alumini_benefits .c6 {
+    top: 15px;
+  }
+  .alumini_benefits .c3, .alumini_benefits .c7 {
+    top: 30px;
+  }
+  .alumini_benefits .c4, .alumini_benefits .c8 {
+    top: 45px;
+  }
+  .c_padd {
+    padding-top: 60px;
+  }
+  .alumini_benefits .alumini_info .alumini_copy {
+    font-size: 14px;
+    line-height: 14px;
+    padding: 20px 0px 10px 95px;
+  }
+  .alumini_benefits .c3 .alumini_copy {
+    padding: 30px 0px 10px 95px;
+  }
+  .alumini_benefits .c5 .alumini_copy {
+    padding: 30px 0px 10px 95px;
+  }
+  .ipo_block {
+    text-align: left;
+    margin: 20px 0
+  }
+  .ipo_block .ipo_icon {
+    width: 25%;
+    float: left;
+  }
+  .ipo_block .ipo_text {
+    width: 75%;
+    float: left;
+    padding: 40px 0 0;
+  }
+  .ipd .ipo_block .ipo_icon img {
+    width: 68%;
+  }
+  .participant .card {
+    height: auto;
+  }
+  .banner .heading {
+    width: 100%;
+  }
+  .cam_padding {
+    margin: 30px 20px 0;
+  }
+}
+@media only screen and (max-width:767px) {
+  .ipd .ipo_block .ipo_icon img {
+    width: 90%;
+  }
+  .ipo_block .ipo_text {
+    padding: 40px 0 0;
+  }
+  .carousel .card {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:600px) {
+  .ipo_block .ipo_text {
+    padding: 20px 0 0;
+  }
+}
+@media only screen and (max-width:400px) {
+  .ipo_block .ipo_text {
+    padding: 0px 0 0;
+  }
+}
